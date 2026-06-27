@@ -56,20 +56,14 @@
     .nav-logo {
       display: flex;
       align-items: center;
-      gap: 10px;
       flex-shrink: 0;
     }
 
-    .nav-logo svg { width: 30px; height: 30px; flex-shrink: 0; }
-
-    .nav-logo-text {
-      font-family: 'Inter', sans-serif;
-      font-weight: 700;
-      font-size: 13px;
-      letter-spacing: 0.12em;
-      color: var(--gold);
-      line-height: 1.2;
-      text-transform: uppercase;
+    /* Replace logo.png with your real logo file */
+    .nav-logo img {
+      height: 44px;
+      width: auto;
+      display: block;
     }
 
     .nav-links {
@@ -1070,14 +1064,8 @@
   <!-- NAVIGATION -->
   <nav id="main-nav">
     <a href="#hero" class="nav-logo" aria-label="Peer Prep Academy home">
-      <!-- Gold graduation cap icon -->
-      <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M15 5L1 12l14 7 14-7-14-7z" fill="#c9a84c"/>
-        <path d="M5 15.5V21.5c0 1.5 4.5 4 10 4s10-2.5 10-4V15.5" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-        <line x1="25" y1="12" x2="25" y2="19" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
-        <circle cx="25" cy="20" r="1.5" fill="#c9a84c"/>
-      </svg>
-      <span class="nav-logo-text">Peer Prep<br>Academy</span>
+      <!-- Replace logo.png with your real logo file — drop it in the same folder as index.html -->
+      <img src="logo.png" alt="Peer Prep Academy" />
     </a>
 
     <ul class="nav-links" id="nav-links">
