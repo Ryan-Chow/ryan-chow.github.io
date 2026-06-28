@@ -6,7 +6,6 @@
   <title>Peer Prep Academy — SAT, PSAT & Math Tutoring | San Francisco Bay Area</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -47,7 +46,7 @@
       z-index: 1000;
       background: var(--navy);
       padding: 0 40px;
-      height: 76px;
+      height: 96px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -62,7 +61,7 @@
 
     /* Replace logo.png with your real logo file */
     .nav-logo img {
-      height: 56px;
+      height: 84px;
       width: auto;
       display: block;
     }
@@ -120,7 +119,7 @@
     .mobile-menu {
       display: none;
       position: fixed;
-      top: 76px;
+      top: 96px;
       left: 0;
       right: 0;
       background: var(--navy);
@@ -415,10 +414,18 @@
     .tutors-photo-wrap img {
       width: 100%;
       max-width: 860px;
-      height: 380px;
-      object-fit: cover;
+      height: auto;
+      max-height: 460px;
+      object-fit: contain;
       border-radius: var(--radius);
       background: #c8d0dc;
+    }
+
+    @media (max-width: 600px) {
+      .tutors-photo-wrap img {
+        max-height: none;
+        object-fit: contain;
+      }
     }
 
     .photo-caption {
@@ -728,7 +735,7 @@
 
     /* ── TESTIMONIALS ── */
     #testimonials {
-      background: var(--cream);
+      background: var(--white);
       padding: 0 0 88px;
     }
 
@@ -1181,6 +1188,42 @@
     </div>
   </section>
 
+  <!-- TESTIMONIALS: Replace quotes and names below with real ones when available -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="centered" style="margin-bottom: 44px;">
+        <h2 class="section-heading">What This Year's Students Are Saying</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-quote">"Opening that SAT score was one of the best feelings in the world. Thank you so much for getting me the score I wanted!"</p>
+          <p class="testimonial-author">Adriene Barki</p>
+          <p class="testimonial-college">Cornell '30</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-quote">"They did not lie about the 100 point increase. I thought a 1470 SAT was good, but a 1570 is even better!"</p>
+          <p class="testimonial-author">Andrew Blaise</p>
+          <p class="testimonial-college">Dartmouth '30</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-quote">"I really like how LGBTQ friendly the tutors were! They were really accepting of my personality and identity and created a safe learning space for me."</p>
+          <p class="testimonial-author">Blake Almon</p>
+          <p class="testimonial-college">University of Chicago '30</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- SECTION 3: TRADITIONAL TUTORS HAVEN'T CAUGHT UP -->
   <section id="traditional">
     <div class="container">
@@ -1415,43 +1458,6 @@
           </div>
           <h3 style="margin-bottom: 10px;">Test Simulation &amp; Strategy</h3>
           <p style="font-size: 14px; color: #374151; line-height: 1.65;">Full-length timed digital tests, pacing strategy, and an exam-day prep checklist.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 9: TESTIMONIALS -->
-  <!-- TESTIMONIALS: Replace quotes and names below with real ones when available -->
-  <section id="testimonials">
-    <div class="container">
-      <div class="centered" style="margin-bottom: 44px;">
-        <h2 class="section-heading">What This Year's Students Are Saying</h2>
-        <div class="section-divider"></div>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="stars">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-          </div>
-          <p class="testimonial-quote">"Opening that SAT score was one of the best feelings in the world. Thank you so much for getting me the score I wanted!"</p>
-          <p class="testimonial-author">Adriene Barki</p>
-          <p class="testimonial-college">Cornell '30</p>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-          </div>
-          <p class="testimonial-quote">"They did not lie about the 100 point increase. I thought a 1470 SAT was good, but a 1570 is even better!"</p>
-          <p class="testimonial-author">Andrew Blaise</p>
-          <p class="testimonial-college">Dartmouth '30</p>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">
-            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
-          </div>
-          <p class="testimonial-quote">"I really like how LGBTQ friendly the tutors were! They were really accepting of my personality and identity and created a safe learning space for me."</p>
-          <p class="testimonial-author">Blake Almon</p>
-          <p class="testimonial-college">University of Chicago '30</p>
         </div>
       </div>
     </div>
